@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const manu = <>
-        <li><a>Home</a></li>
-        <li><a>Add card</a></li>
+        <Link to={'/'}><li><a>Home</a></li></Link>
+        <Link to={'/additems'}><li><a>Add card</a></li></Link>
         <Link to={'/login'}> <button className="btn btn-outline">Log In</button></Link>
     </>
     return (
-        <div>
+        <div className='max-w-[1250px] mx-auto'>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">

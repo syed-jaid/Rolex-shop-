@@ -8,6 +8,7 @@ import Main from './Allpages/HomePart/Main';
 import Home from './Allpages/Home';
 import LogIn from './Allpages/Auth/LogIn';
 import SignUp from './Allpages/Auth/SignUp';
+import AddItems from './Allpages/AddCard/AddItems';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ function App() {
         {
           path: '/',
           element: <Home />
+        },
+        {
+          path: '/additems',
+          element: <AddItems />
         }
       ]
     },
